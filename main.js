@@ -3,8 +3,8 @@ function GetRandomInt(max) {
 }
 
 let tg = window.Telegram.WebApp;
-let userid = 111 //urlParams.get('userid')
-let balance = 222 //urlParams.get('balance')
+let userid = urlParams.get('userid')
+let balance = urlParams.get('balance')
 let result = document.getElementById('result')
 let finish = document.getElementById('finish')
 tg.expand()
