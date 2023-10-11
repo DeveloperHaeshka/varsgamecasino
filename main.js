@@ -81,7 +81,8 @@ play.addEventListener('click', () => {
   finish.addEventListener('click', () => {
     let data = {
         status: 'newbalance',
-        balance: balance
+        balance: balance,
+        user_id: userid
       }
       tg.sendData(JSON.stringify(data))
   })
