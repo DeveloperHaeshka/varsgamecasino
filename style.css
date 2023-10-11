@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Yanone+Kaffeesatz:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+body {
+    background: black;
+}
+
+.logo {
+    display: grid;
+    place-items: center;
+    color: white;
+    font-family: 'Pixelify Sans', serif;
+    filter: drop-shadow(0 0px 5px white);
+}
+
+.gamemenu {
+    display: grid;
+    place-items: center;
+    background: white;
+    border-radius: 15px;
+    height: 250px;
+    width: 250px;
+    align-content: center;
+    font-size: 20px;
+    font-family: 'Oswald', cursive;
+    box-shadow: 0 0px 15px white;
+}
+
+.data {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 15px;
+    height: 75px;
+    width: 175px;
+    background: white;
+    box-shadow: 0 0px 25px white;
+    border-radius: 15px;
+}
+
+.buttonGame {
+    border: 0;
+    border-radius: 10px;
+    color : white;
+    background: black;
+    margin-top: 10px;
+    height: 40px;
+    width: 115px;
+    font-size: 15px;
+    font-family: 'Oswald', cursive; 
+    transition: all 0.7s ease;  
+}
+
+.buttonGame:hover {
+    box-shadow: 0 0px 30px rgb(179, 179, 179);
+}
+
+.inputSumm {
+    margin-top: -100px;
+    color: black;
+    font-weight: bold;
+    margin-top: -20px;
+    height: 45px;
+    width: 115px;
+    text-align: center;
+    border: 0;
+    background-color: rgb(223, 218, 212);
+    border-radius: 10px;
+    transition: all 0.7s ease;
+    font-size: 15px;
+}
+
+.inputSumm:hover {
+    height: 40px;
+    width: 150px;
+    box-shadow: 0 0px 15px black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.result {
+    font-size: 25px;
+    margin-top: 8px;
+    font-family: 'Pixelify Sans', serif;
+    color: rgb(70, 73, 75);
+    text-align: center;
+}
+
+.data-text {
+    size: 3px;
+}
+
+.info {
+    color: rgb(138, 138, 138);
+    margin-top: 25px;
+    display: grid;
+    place-items: center;
+    font-family: 'Quicksand', serif;
+}
+
+.finish {
+    background: red;
+    border-radius: 5px;
+    box-shadow: 0 0px 10px red;
+    color:  white;
+    font-size: 25px;
+    margin-top: 25px;
+    display: grid;
+    place-items: center;
+    border: 0;
+    height: 50px;
+    width: 150px;
+    font-family: 'Pixelify Sans', serif;
+}
+
+.website {
+    display: grid;
+    place-items: center;
+}
+
+
+
+
+
