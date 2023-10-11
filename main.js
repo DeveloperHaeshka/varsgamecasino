@@ -29,28 +29,28 @@ play.addEventListener('click', () => {
         rx = GetRandomInt(101)
         let StatusSumm = ''
         if (rx >= 0 && rx <= 10) {
-            x = 0
-            StatusSumm = '-'
+            x = 2
+            StatusSumm = '+'
         }
         if (rx >= 11 && rx <= 25) {
-            x = 0.3
-            StatusSumm = '-'
+            x = 1
+            StatusSumm = ''
         }
         if (rx >= 26 && rx <= 50) {
-            x = 0.7
-            StatusSumm = '-'
-        }
-        if (rx >= 51 && rx <= 75) {
             x = 1.7
             StatusSumm = '+'
         }
+        if (rx >= 51 && rx <= 75) {
+            x = 0.7
+            StatusSumm = '-'
+        }
         if (rx >= 76 && rx <= 90) {
-            x = 1.3
-            StatusSumm = '+'
+            x = 0.3
+            StatusSumm = '-'
         }
         if (rx >= 91 && rx <= 100) {
-            x = 2
-            StatusSumm = '+'
+            x = 0
+            StatusSumm = '-'
         }
         let StavkaWinish = summ * x
         if (x == 0) {
