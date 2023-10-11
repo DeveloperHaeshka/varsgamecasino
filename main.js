@@ -33,8 +33,8 @@ play.addEventListener('click', () => {
             StatusSumm = '+'
         }
         if (rx >= 11 && rx <= 25) {
-            x = 1
-            StatusSumm = ''
+            x = 0.5
+            StatusSumm = '-'
         }
         if (rx >= 26 && rx <= 50) {
             x = 1.7
