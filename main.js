@@ -5,7 +5,7 @@ function GetRandomInt(max) {
 var urlParams = new URLSearchParams(window.location.search);
 let tg = window.Telegram.WebApp;
 let userid = urlParams.get('userid')
-let balance = urlParams.get('balance')
+let balance = parseInt(urlParams.get('balance'))
 let result = document.getElementById('result')
 let finish = document.getElementById('finish')
 tg.expand()
