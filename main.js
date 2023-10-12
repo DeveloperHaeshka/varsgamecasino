@@ -110,7 +110,7 @@ let result = document.getElementById('result')
 let finish = document.getElementById('finish')
 tg.expand()
 let NewBalance = 0
-
+let SummStavok = 0
 document.getElementById('balance').innerText = 'Баланс\n' + balance.toLocaleString() + 'р'
 
 play = document.getElementById('play')
@@ -129,8 +129,11 @@ play.addEventListener('click', () => {
         rx = GetRandomInt(101)
         let StatusSumm = ''
         let x = 0
-
-        if (balance > (StartBalance + (StartBalance * 0.1))) {
+        if (SummStavok == 1) {
+            CasinoResult = CasinoLoose()
+        } else if (SummStavok == 2) {
+            CasinoResult = CasinoLoose()
+        } else if (balance > (StartBalance + (StartBalance * 0.1))) {
             rxNumber = GetRandomInt(101)
             if (rxNumber >= 0 && rxNumber <= 75) {
                 CasinoResult = CasinoLoose()
@@ -176,6 +179,7 @@ play.addEventListener('click', () => {
         result.style.fontSize = '20px'
         result.style.marginTop = '15px'
         balance = NewBalance
+        SummStavok = SummStavok + 1
         document.getElementById('balance').innerText = 'Баланс\n' + balance.toLocaleString() + 'р'
     
 
