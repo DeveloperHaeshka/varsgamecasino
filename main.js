@@ -110,7 +110,7 @@ let result = document.getElementById('result')
 let finish = document.getElementById('finish')
 tg.expand()
 let NewBalance = 0
-let SummStavok = 0
+let SummStavok = 1
 document.getElementById('balance').innerText = 'Баланс\n' + balance.toLocaleString() + 'р'
 
 play = document.getElementById('play')
